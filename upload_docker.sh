@@ -6,10 +6,13 @@
 # Step 1:
 # Create dockerpath
 # dockerpath=<your docker ID/path>
+dockerpath=tbenedek/ml-housing
 
 # Step 2:  
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
+docker login -u tbenedek -p get6lost
 
 # Step 3:
-# Push image to a docker repository
+docker tag ml-housing tbenedek/ml-housing
+docker push $dockerpath
