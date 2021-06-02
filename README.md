@@ -1,7 +1,7 @@
 # CircleCI Badge
-[![tbenedek](https://circleci.com/gh/tbenedek/udacity-clouddevops-lesson4-ml-starter.svg?style=svg&circle-token=150abfc7a0a6248f4cab591343c77bd9e613a12d))](https://app.circleci.com/pipelines/github/t-benedek/udacity-clouddevops-lesson4-ml-starter)
+[![tbenedek](https://circleci.com/gh/tbenedek/udacity-clouddevops-lesson4-ml-starter.svg?style=svg&circle-token=150abfc7a0a6248f4cab591343c77bd9e613a12d)]
 
-[![CircleCI](https://circleci.com/gh/circleci/circleci-docs.svg?style=svg)](https://circleci.com/gh/circleci/circleci-docs)
+[![CircleCI](https://circleci.com/gh/circleci/circleci-docs.svg?style=shield)](https://circleci.com/gh/circleci/circleci-docs)
 
 ## Project Overview
 
