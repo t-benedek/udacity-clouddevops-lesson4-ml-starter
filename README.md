@@ -1,5 +1,9 @@
 <include a CircleCI status badge, here>
 
+
+# Template:
+[![tbenedek](https://circleci.com/gh/tbenedek/udacity-clouddevops-lesson4-ml-starter.svg?style=svg)](https://app.circleci.com/pipelines/github/t-benedek/udacity-clouddevops-lesson4-ml-starter)
+
 ## Project Overview
 
 In this project, you will apply the skills you have acquired in this course to operationalize a Machine Learning Microservice API. 
