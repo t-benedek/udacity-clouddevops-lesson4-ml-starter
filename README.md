@@ -1,4 +1,4 @@
-<include a CircleCI status badge, here>
+[![t-benedek](https://circleci.com/gh/t-benedek/udacity-clouddevops-lesson4-ml-starter.svg?style=shield)](https://app.circleci.com/pipelines/github/t-benedek/udacity-clouddevops-lesson4-ml-starter)
 
 ## Project Overview
 
