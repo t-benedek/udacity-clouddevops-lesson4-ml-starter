@@ -14,3 +14,14 @@ This project shows how to build a simple machine learning written in python (pre
 ### Run using docker
 - use the script "run_docker.sh" to build the image, display your docker images and run the docker image on port 8000
 - use the script "make_prediction.sh" in another terminal to get out a prediction value
+
+## File overview
+- model_data: pretrained model
+- output_txt_files: output files to re-check 
+- Dockerfile: docker definition file
+- Makefile: makefile to run locally, in docker or in circleci
+- app.py: Main python app
+- make_prediction.sh: test presiction against a running model 
+- requirements.txt: reuquired dependences
+- run_docker.sh: running pretrained model with docker 
+- run_kubernetes.sh: running docker image using kubernetes (you need minikube installed)
