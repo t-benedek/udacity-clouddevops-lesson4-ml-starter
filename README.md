@@ -1,8 +1,8 @@
-<include a CircleCI status badge, here>
-
-
-# Template:
+CircleCI Badge
 [![tbenedek](https://circleci.com/gh/tbenedek/udacity-clouddevops-lesson4-ml-starter.svg?style=svg)](https://app.circleci.com/pipelines/github/t-benedek/udacity-clouddevops-lesson4-ml-starter)
+
+# Example:
+[![CircleCI](https://circleci.com/gh/circleci/circleci-docs.svg?style=svg)](https://circleci.com/gh/circleci/circleci-docs)
 
 ## Project Overview
 
