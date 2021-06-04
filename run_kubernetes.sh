@@ -12,10 +12,14 @@ dockerpath=tbenedek/ml-housing
 kubectl create deployment ml-housing --image=$dockerpath --port=8000
 
 # Step 3:
-# List kubernetes pods
+# sleep for 15 seconds to wait for pod to come up
+sleep 15
+
+# show pods
 kubectl get pods
 
 # Step 4:
 # Forward the container port to a host
-kubectl port-forward pod/ml-housing 8000:8000
+# kubectl port-forward pod/ml-housing 8000:8000
 
+kubectl port-forward deployment/ml-housing 8000:8000
