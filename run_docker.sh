@@ -4,6 +4,8 @@
 
 # Step 1:
 docker build --tag=ml-housing .
+# Run hadolint for Dockerfile
+docker run -it ml-housing hadolint Dockerfile
 
 # Step 2: 
 docker images
