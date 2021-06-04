@@ -1,17 +1,21 @@
 #!/usr/bin/env bash
 # This file tags and uploads an image to Docker Hub
 
-# Assumes that an image is built via `run_docker.sh`
-# Step 1:
-# Create dockerpath
-# dockerpath=<your docker ID/path>
+# check for username and password as parameter
+if [ $# -lt 2 ]
+  then
+    echo "USAGE: upload_docker.sh <username> <password>"
+    exit 1
+fi
+
+# set dockerpath
 dockerpath=tbenedek/ml-housing
 
 # Step 2:  
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
-docker login -u tbenedek -p get6lost
+docker login -u $1 -p $2
 
 # Step 3:
-docker tag ml-housing tbenedek/ml-housing
+docker tag ml-housing $dockerpath
 docker push $dockerpath
