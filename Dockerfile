@@ -9,7 +9,10 @@ COPY . app.py /app/
 ## Step 3:
 # Install packages from requirements.txt
 # hadolint ignore=DL3013
-RUN pip install --no-cache-dir --upgrade pip && pip install --no-cache-dir --trusted-host pypi.python.org -r requirements.txt
+RUN pip install --no-cache-dir --upgrade pip &&\ 
+    pip install --no-cache-dir --trusted-host pypi.python.org -r requirements.txt &&\ 
+    wget -O /bin/hadolint https://github.com/hadolint/hadolint/releases/download/v1.16.3/hadolint-Linux-x86_64 &&\ 
+    chmod +x /bin/hadolint
 
 ## Step 4:
 EXPOSE 80
