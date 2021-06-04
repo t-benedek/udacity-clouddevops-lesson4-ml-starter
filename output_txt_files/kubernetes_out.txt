@@ -1,10 +1,5 @@
-Note: The predictive output for logging is working, but due to an issue with my shell bash version, 
-it is not displaying in the main terminal. Instead, 
-it displays in a container log I can visibly see when call "kubectl logs" command. 
-I've included the log output in the "kubernetes_out.txt" as well as the main terminal output.
+tbenedek$ ku logs ml-housing-6c776cfcf-ftp7b
 
-
-kubectl logs ml-housing
  * Serving Flask app "app" (lazy loading)
  * Environment: production
    WARNING: Do not use the development server in a production environment.
@@ -13,29 +8,17 @@ kubectl logs ml-housing
  * Running on http://0.0.0.0:8000/ (Press CTRL+C to quit)
  * Restarting with stat
  * Debugger is active!
- * Debugger PIN: 253-477-381
-127.0.0.1 - - [31/May/2021 21:48:49] "GET / HTTP/1.1" 200 -
-127.0.0.1 - - [31/May/2021 21:49:00] "GET / HTTP/1.1" 200 -
-127.0.0.1 - - [31/May/2021 21:49:36] "GET / HTTP/1.1" 200 -
-127.0.0.1 - - [31/May/2021 21:51:18] "GET / HTTP/1.1" 200 -
-[2021-05-31 21:51:52,441] INFO in app: JSON payload: 
+ * Debugger PIN: 970-072-960
+127.0.0.1 - - [04/Jun/2021 10:30:10] "GET / HTTP/1.1" 200 -
+[2021-06-04 10:30:28,321] INFO in app: JSON payload: 
 {'CHAS': {'0': 0}, 'RM': {'0': 6.575}, 'TAX': {'0': 296.0}, 'PTRATIO': {'0': 15.3}, 'B': {'0': 396.9}, 'LSTAT': {'0': 4.98}}
-[2021-05-31 21:51:53,007] INFO in app: Inference payload DataFrame: 
+[2021-06-04 10:30:28,438] INFO in app: Inference payload DataFrame: 
    CHAS     RM    TAX  PTRATIO      B  LSTAT
 0     0  6.575  296.0     15.3  396.9   4.98
-[2021-05-31 21:51:53,040] INFO in app: Scaling Payload: 
+[2021-06-04 10:30:28,459] INFO in app: Scaling Payload: 
    CHAS     RM    TAX  PTRATIO      B  LSTAT
 0     0  6.575  296.0     15.3  396.9   4.98
-[2021-05-31 21:51:53,331] INFO in app: Prediction value from Thomas : [20.35373177134412]
-127.0.0.1 - - [31/May/2021 21:51:53] "POST /predict HTTP/1.1" 200 -
-127.0.0.1 - - [31/May/2021 21:54:03] "GET / HTTP/1.1" 200 -
-[2021-05-31 21:54:12,079] INFO in app: JSON payload: 
-{'CHAS': {'0': 0}, 'RM': {'0': 6.575}, 'TAX': {'0': 296.0}, 'PTRATIO': {'0': 15.3}, 'B': {'0': 396.9}, 'LSTAT': {'0': 4.98}}
-[2021-05-31 21:54:12,145] INFO in app: Inference payload DataFrame: 
-   CHAS     RM    TAX  PTRATIO      B  LSTAT
-0     0  6.575  296.0     15.3  396.9   4.98
-[2021-05-31 21:54:12,169] INFO in app: Scaling Payload: 
-   CHAS     RM    TAX  PTRATIO      B  LSTAT
-0     0  6.575  296.0     15.3  396.9   4.98
-[2021-05-31 21:54:12,188] INFO in app: Prediction value from Thomas : [20.35373177134412]
-127.0.0.1 - - [31/May/2021 21:54:12] "POST /predict HTTP/1.1" 200 -
+[2021-06-04 10:30:28,496] INFO in app: Prediction value from Thomas : [20.35373177134412]
+127.0.0.1 - - [04/Jun/2021 10:30:28] "POST /predict HTTP/1.1" 200 -
+127.0.0.1 - - [04/Jun/2021 10:32:34] "GET / HTTP/1.1" 200 -
+Isabellas-Air:udacity-clouddevops-lesson4-ml-starter tbenedek$ 
